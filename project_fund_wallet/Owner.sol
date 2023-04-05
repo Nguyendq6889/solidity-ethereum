@@ -12,6 +12,6 @@ contract Owner {
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Ban khong duoc phep"); // check xem người gọi hàm này phải là người deploy SC thì mới cho tạo token mới
-        _; // thực thi những lệnh trong hàm mà sử dụng modifier khi thỏa điều kiện ở trêntrên
+        _; // thực thi những lệnh trong hàm mà sử dụng modifier khi thỏa điều kiện ở trên
     }
 }
